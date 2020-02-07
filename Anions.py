@@ -83,7 +83,7 @@ def nametoformula():
 	print(Style.RESET_ALL)
 	input("Pressione ENTER para fechar...")
 
-
-mode = input("'formulas' ou 'nomes'? ")
-print()
-formulatoname() if mode == 'nomes' else nametoformula() if mode == 'formulas' else print(f"{Fore.RED}Erro")
+if __name__ == "__main__":
+	mode = input("'formulas' ou 'nomes'? ")
+	print()
+	formulatoname() if mode == 'nomes' else nametoformula() if mode == 'formulas' else print(f"{Fore.RED}Erro")
